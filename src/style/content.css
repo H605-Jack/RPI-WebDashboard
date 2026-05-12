@@ -1,0 +1,19 @@
+.container-header {
+    margin-top: 70px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.content {
+    margin-left: 250px;
+    /* display: flex; */
+}
+
+.content-section {
+    padding: 20px;
+}

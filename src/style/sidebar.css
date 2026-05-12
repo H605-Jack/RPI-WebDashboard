@@ -1,0 +1,43 @@
+.sidebar {
+    height: calc(100vh - 70px);
+    width: 250px;
+    display: flex; 
+    position: fixed;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.sidebar-wrapper {
+    left: 0;
+    right: calc(100% - 250px);
+}
+
+.sidebar-color {
+    background-color: #313131;
+    color: white;
+}
+
+.sidebar-footer {
+    padding-left: 20px;
+    line-height: 17px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.sidebar-button-highlight:hover{
+    border-left: 2px solid white;
+    padding-left: 18px;
+    text-decoration: underline;
+}
+
+.services {
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.services-button {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+}

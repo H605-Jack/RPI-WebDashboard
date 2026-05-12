@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -r /var/www/kiet-pifive/dev/dist /var/www/kiet-pifive
+if [[ $1 == "--with-php" ]]; then
+	mv /var/www/kiet-pifive/dist/index.html /var/www/kiet-pifive/dist/index.php
+fi
