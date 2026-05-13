@@ -1,6 +1,10 @@
 #!/bin/bash
 
-cp -r /var/www/kiet-pifive/dev/dist /var/www/kiet-pifive
-if [[ $1 == "--with-php" ]]; then
+cp -r /var/www/$HOSTNAME/dev/dist /var/www/$HOSTNAME # will generate the /dist directive at the parent directory
+
+if [[ -z $1 ]]; then
 	mv /var/www/kiet-pifive/dist/index.html /var/www/kiet-pifive/dist/index.php
 fi
+
+# if build with html production only, pass any $1 argument
+
